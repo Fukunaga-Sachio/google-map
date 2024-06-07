@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8/'>
+  <style>
+    a {
+      font-size: 30px;
+    }
+  </style>
+</head>
+ 
+<body>
+  <!--
+  <iframe height="203" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.900850677036!2d139.7116850406398!3d35.67944327270199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d89aadfca4d%3A0xd846ee769ca6898e!2sJapan%20National%20Stadium!5e0!3m2!1sen!2sus!4v1698731408275!5m2!1sen!2sus&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade" width="343" aria-hidden="false" loading="lazy" title="Japan National Stadium"></iframe>
+  <br><br><br>
+  -->
+  <iframe id="map1" style="display:block;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.3327113244197!2d139.72605066967714!3d35.66885478780135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b161eaf7497%3A0xd1424147c7d33a79!2sGENEROSITY%20Inc.!5e0!3m2!1sja!2sjp!4v1717749433393!5m2!1sen!2sjp" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe id="map2" style="display:none;"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.3328885414445!2d139.72629474860787!3d35.668837329892426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b7e67a51dc1%3A0xe1bb7a76f7476e3!2z5LmD5pyo56We56S-!5e0!3m2!1sja!2sjp!4v1717748483561!5m2!1sen!2sjp" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe id="map3" style="display:none;"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.4130208139504!2d139.72392217710066!3d35.66683093076262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b7e81833577%3A0x8e7bbed7ef3f58fc!2z5LmD5pyo5Z2C6aeF!5e0!3m2!1sja!2sjp!4v1717749531793!5m2!1sen!2sjp" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <ul class="tab">
+    <li><a href="#1" onclick="a1_click();">GENEROSITY</a></li>
+    <li><a href="#2" onclick="a2_click();">乃木神社</a></li>
+    <li><a href="#3" onclick="a3_click();">乃木坂駅</a></li>
+    </ul>
+</body>
+
+<script>
+  function a1_click() {
+    map1 = document.getElementById("map1");
+    map2 = document.getElementById("map2");
+    map3 = document.getElementById("map3");
+    map1.style.display = 'block';
+    map2.style.display = 'none';
+    map3.style.display = 'none';
+
+    return false;
+  }
+
+  function a2_click() {
+    map1 = document.getElementById("map1");
+    map2 = document.getElementById("map2");
+    map3 = document.getElementById("map3");
+    map1.style.display = 'none';
+    map2.style.display = 'block';
+    map3.style.display = 'none';
+
+    return false;
+  }
+
+  function a3_click() {
+    map1 = document.getElementById("map1");
+    map2 = document.getElementById("map2");
+    map3 = document.getElementById("map3");
+    map1.style.display = 'none';
+    map2.style.display = 'none';
+    map3.style.display = 'block';
+
+    return false;
+  }
+
+</script>
+</html>
